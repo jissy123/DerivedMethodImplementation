@@ -23,7 +23,7 @@ private Integer age;
 private Date createdDate;
 
 private String email;
-
+private String email1;
 public Person() {
 
 }
