@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DerivedMethodimplementationApplication {
 
 	public static void main(String[] args) {
+		
 		SpringApplication.run(DerivedMethodimplementationApplication.class, args);
+		
 	}
 
 }

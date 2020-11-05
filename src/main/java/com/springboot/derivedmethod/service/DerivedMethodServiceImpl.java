@@ -25,62 +25,64 @@ public class DerivedMethodServiceImpl implements DerivedMethodService {
 
 	@Override
 	public List<Person> findByFirstNameAndLastName(String firstName, String lastName) {
-		// TODO Auto-generated method stub
-		return null;
+	
+		return personRepo.findByFirstNameAndLastName(firstName, lastName);
 	}
+	
+	
 
 	@Override
 	public List<Person> findByFirstNameOrLastName(String firstName, String lastName) {
-		// TODO Auto-generated method stub
-		return null;
+
+		return personRepo.findByFirstNameOrLastName(firstName, lastName);
 	}
 
 	@Override
 	public List<Person> findByAgeLessThanEqual(Integer age) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return personRepo.findByAgeLessThanEqual(age);
 	}
 
 	@Override
 	public List<Person> findByLastNameOrderByCreatedDateDesc(String lastName) {
 		// TODO Auto-generated method stub
-		return null;
+		return personRepo.findByLastNameOrderByCreatedDateDesc(lastName);
 	}
 
 	@Override
 	public Person findById(Integer personId) {
 		// TODO Auto-generated method stub
-		return null;
+		return personRepo.findById(personId).orElse(new Person());
 	}
 
 	@Override
 	public Iterable<Person> savePersonsData(List<Person> personList) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return personRepo.saveAll(personList);
 	}
 
 	@Override
 	public Iterable<Person> findPersonsById(List<Integer> personList) {
-		// TODO Auto-generated method stub
-		return null;
+	
+		return personRepo.findAllById(personList);
 	}
 
 	@Override
 	public Iterable<Person> findByFirstNameLike(String firstName) {
-		// TODO Auto-generated method stub
-		return null;
+	
+		return personRepo.findbyFirstNameLike(firstName);
 	}
 
 	@Override
 	public List<Person> findByLastNameAndAgeLessThanEqual(String lastName, int age) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return personRepo.findByLastNameAndAgeLessThanEqual(lastName, age);
 	}
 
 	@Override
 	public List<Person> findByCreatedDateBetween(Date startdate, Date endDate) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return personRepo.findByCreatedDateBetween(startdate, endDate);
 	}
 
 }

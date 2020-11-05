@@ -19,4 +19,5 @@ public interface DerivedMethodService {
 	public Iterable<Person> findByFirstNameLike(String firstName);
 	public List<Person> findByLastNameAndAgeLessThanEqual(String lastName,int age);
 	public List<Person> findByCreatedDateBetween(Date startdate,Date endDate);
+	
 }
