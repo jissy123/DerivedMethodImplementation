@@ -24,9 +24,23 @@ private Date createdDate;
 
 private String email;
 
-public Person() {
+public Person(String string, String string2, String string3, int i) {
 
 }
+
+
+
+public Person( String firstName, String lastName, Integer age, Date createdDate, String email) {
+	super();
+	
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.age = age;
+	this.createdDate = createdDate;
+	this.email = email;
+}
+
+
 
 public Integer getPersonId() {
 	return personId;
